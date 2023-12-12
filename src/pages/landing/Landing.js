@@ -4,6 +4,7 @@ import AboutLanding from '../../components/aboutLanding/AboutLanding'
 import ScreenCompatibility from '../../components/screenCompatibilitySection/ScreenCompatibility'
 import MassegesSections from '../../components/massegesSections/MassegesSections'
 import CardsContainer from "../../components/cardsContainer/CardsContainer";
+import VideoCall from '../../components/videoCall/VideoCall'
 export default function Landing() {
   return (
         <>
@@ -12,8 +13,8 @@ export default function Landing() {
             <ScreenCompatibility />
             <MassegesSections/>
             <CardsContainer />;
+            <VideoCall />
          </>
     )
+
 }
-
-
