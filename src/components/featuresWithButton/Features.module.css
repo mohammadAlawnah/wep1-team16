@@ -1,0 +1,14 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 10px;
+}
+.btn {
+  background-color: black;
+  border: none;
+  width: 150px;
+}
+.btn:hover {
+  background-color: grey;
+}

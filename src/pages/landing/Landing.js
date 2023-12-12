@@ -1,7 +1,6 @@
-import React from 'react'
+import React from "react";
+import CardsContainer from "../../components/cardsContainer/CardsContainer";
 
 export default function Landing() {
-  return (
-    <div>Landing</div>
-  )
+  return <CardsContainer />;
 }
