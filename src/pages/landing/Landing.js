@@ -5,6 +5,7 @@ import ScreenCompatibility from '../../components/screenCompatibilitySection/Scr
 import MassegesSections from '../../components/massegesSections/MassegesSections'
 import CardsContainer from "../../components/cardsContainer/CardsContainer";
 import VideoCall from '../../components/videoCall/VideoCall'
+import DownloadApp from '../../components/downloadApp/DownloadApp'
 export default function Landing() {
   return (
         <>
@@ -14,7 +15,7 @@ export default function Landing() {
             <MassegesSections/>
             <CardsContainer />;
             <VideoCall />
+            <DownloadApp/>
          </>
     )
-
 }
