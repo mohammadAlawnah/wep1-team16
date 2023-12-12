@@ -1,0 +1,46 @@
+body{
+    background-color: #EFF2F6 !important;
+}
+/* the main heding page */
+.heading{
+    font-size: 3.5rem;
+    font-weight: 700;
+
+}
+.AboutSection{
+    position: relative;
+}
+
+/* add bluer to the background */
+.bluer{
+    width: 200px;
+    position: absolute;
+}
+
+
+.yellow-bluer{
+    height: 200px;
+    background-color: #F7D44C;
+    filter: blur(12rem);
+    -webkit-filter: blur(12rem);
+    top:20%;
+}
+.purple-bluer{
+    height: 250px;
+    background-color: #C926E1;
+    filter: blur(14rem);
+    -webkit-filter: blur(14rem);
+    right: 5%;
+    top:70%;
+}
+.blue-bluer{
+    height: 250px;
+    background-color: #4066FF    ;
+    filter: blur(14rem);
+    -webkit-filter: blur(14rem);
+    right: 40%;
+    top:95%;
+}
+
+
+
