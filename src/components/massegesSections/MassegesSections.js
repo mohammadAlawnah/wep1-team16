@@ -3,7 +3,7 @@ import './MassegesSections.css'
 import CardsOfSection from '../../components/massegesSections/CardsOfSection'
 export default function MassegesSections() {
 
-  const imge1="../../img/landingPageImg/like.png";
+  const imge1="../../img/landingPageImg/like-messges.png";
   const imge2="../../img/landingPageImg/love.png";
   const imge3="../../img/landingPageImg/star.png";
 
