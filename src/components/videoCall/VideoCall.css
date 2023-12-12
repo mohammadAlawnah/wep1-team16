@@ -1,4 +1,4 @@
-body {
+body .videoCall {
     margin: 0px;
     background: radial-gradient(
         circle,
@@ -56,7 +56,7 @@ position: relative;
 position: absolute;
 left: 198px;
 border-radius: 1rem;
-width: 58%; 
+width: 57%; 
 height: auto;
 }
 
@@ -67,16 +67,17 @@ height: auto;
     margin-top: 40px;
 }
 
-.videoCall i {
-font-size: 27px;
-margin-left: 27px;
+.videoCall svg {
+width: 30px;
+height: 30px;
+margin-left: 30px;
 }
 
 .text-container div {
 display: flex;
 }
 
-.text-container div i {
+.text-container div svg {
 margin-right: 15px; 
 }
 
