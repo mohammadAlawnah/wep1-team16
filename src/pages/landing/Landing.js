@@ -1,7 +1,10 @@
 import React from 'react'
+import MassegesSections from '../../components/massegesSections/MassegesSections'
 
 export default function Landing() {
   return (
-    <div>Landing</div>
+    <div>
+      <MassegesSections/>
+    </div>
   )
 }
