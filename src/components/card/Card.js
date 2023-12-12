@@ -3,7 +3,7 @@ import classes from "./Card.module.css";
 
 const Card = ({ icon, image, title, details }) => {
   return (
-    <div className={classes.container}>
+    <div className={classes.cardBox}>
       <div className={classes.card}>
         {icon && (
           <div>
