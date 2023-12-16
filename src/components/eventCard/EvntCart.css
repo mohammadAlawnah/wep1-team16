@@ -1,0 +1,117 @@
+.custum{
+    font-size: 12px;
+    padding: 1px 6px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  
+  }
+  .attending .smallImg{
+    width: 2rem;
+  }
+  .attending img{
+    width: 100%;
+    height: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .marginLeft{
+    margin-left: -0.8rem;
+  }
+  .numAttend{
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    font-weight:400;
+    font-size: 11px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  
+  .attending{
+    font-size: 15px;
+  }
+  
+  .date span , .loc span{
+    font-size: 13.5px;
+    color:#676A79;
+  }
+  
+  .custum2{
+    font-size: 12px;
+    padding: 3px 9px;
+    margin-top: -0.7rem;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+  }
+  
+  .interested{
+    width: 80%;
+  }
+  .share{
+    width: 15%;
+    background-color: #E7F0FD;
+    color: #0F6FEC;
+    font-size: 10px;
+    line-height: 10px;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+  }
+
+  .event-card h5{
+    font-size: 1rem !important;
+  }
+
+  @media screen and   (max-width: 576px) {
+    .event-card{
+      width: 20rem !important;
+      margin: 0 auto;
+    }
+
+  }
+
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+  .event-card{
+    width: 16rem !important;
+    margin: 0 auto;
+  }
+  
+
+  }
+
+
+
+
+@media screen and (min-width:793px) and (max-width: 1999px) {
+  .event-card{
+    width: 20rem !important;
+    margin: 0 auto;
+  }
+  
+   
+  }
+
+@media screen and  (min-width: 1200px) {
+  .event-card{
+    width: 16rem !important;
+  }
+
+   
+ }
