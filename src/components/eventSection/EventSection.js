@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { collection, getDocs } from "firebase/firestore";
-import { db } from '../../../firbase'
-import EventCard from '../EventCard';
+import { db } from '../../firbase'
+import EventCard from '../eventCard/EventCard'
+import './EventSection.css'
 
 export default function EventSection() {
     let index =0;
@@ -35,8 +36,13 @@ export default function EventSection() {
 
   return (
     <>
-    <div className='event container mt-5'>
-    <div className='row'>
+    <div className='event container  mt-5'>
+        <div className='d-flex justify-content-between mb-3'>
+           <h3>Discover Events</h3>
+           <a href='#' >View all events</a>
+         </div>
+        
+    <div className='row '>
     {Events.map((Event,index)=>{
         // return <EventCard title={Event.title } date={Event.date} loc={Event.location} atend={Event.attending} eventDisplay={Event.eventDisplay} EventImg={'../../img/eventpageImg/event5.png'} />
         return <EventCard {...Event} key={Event.id} EventImg={eventImg[index].src}/>

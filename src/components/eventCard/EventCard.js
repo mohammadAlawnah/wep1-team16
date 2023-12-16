@@ -24,14 +24,14 @@ export default function EventCard(props) {
 
   return (
 
-    <div className='col-12 col-sm-6'>
-    <div className="card" style={{width: '18rem'}}>
+    <div className='col-12 col-sm-6 col-xl-3'>
+    <div className="card event-card mb-4" style={{width: '18rem'}}>
    <img src={props.EventImg} className="card-img-top" alt="..." />
    <div className='bg-danger text-white mt-2 me-2 position-absolute top-0 end-0  custum'>{props.eventDisplay}</div>
    <div className="card-body position-relative">
    <div className='bg-primary text-white  position-absolute top-0 start-1 custum2'>Spa training </div>
  
-     <h5 className="card-title w-100"> {props.title} </h5>
+     <h5 className="card-title w-100 card-hedian"> {props.title} </h5>
      <div className='date-and-location'>
        <div className='date'>
        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.5" viewBox="0 0 448 512">
@@ -52,20 +52,20 @@ export default function EventCard(props) {
  
      <div className='attending mt-3 d-flex'>
        <div className='smallImg'>
-       <img src='../../img/eventpageImg/person1.jpg' alt="Eng.Samer"/>
+       <img src='../../img/eventpageImg/person1.jpg' alt="Kim Jong Un"/>
        </div>
-       <div className='smallImg se'>
+       <div className='smallImg marginLeft'>
        <img src='../../img/eventpageImg/person3.png' alt="Eng.Samer"/>
 
        </div>
  
-       <div className='smallImg se'>
-       <img src='../../img/eventpageImg/person2.jpg' alt="Eng.Samer"/>
+       <div className='smallImg marginLeft'>
+       <img src='../../img/eventpageImg/person2.jpg' alt="D.abd"/>
 
        </div>
  
-       <div className='smallImg se '>
-         <p className='xx d-flex align-items-center justify-content-center bg-primary text-white '><span>+</span>{like}</p>
+       <div className='smallImg marginLeft'>
+         <p clasesName='numAttend d-flex align-items-center justify-content-center bg-primary text-white '><span>+</span>{like}</p>
        </div>
        <div>
          <span className='ms-1 text-secondary attending mt-5'>are attending</span>

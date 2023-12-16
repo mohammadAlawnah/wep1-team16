@@ -21,10 +21,10 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
   }
-  .se{
+  .marginLeft{
     margin-left: -0.8rem;
   }
-  .xx{
+  .numAttend{
     background-color: white;
     width: 2rem;
     height: 2rem;
@@ -74,5 +74,44 @@
     -o-border-radius: 0.2rem;
   }
 
+  .event-card h5{
+    font-size: 1rem !important;
+  }
 
+  @media screen and   (max-width: 576px) {
+    .event-card{
+      width: 20rem !important;
+      margin: 0 auto;
+    }
+
+  }
+
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+  .event-card{
+    width: 16rem !important;
+    margin: 0 auto;
+  }
   
+
+  }
+
+
+
+
+@media screen and (min-width:793px) and (max-width: 1999px) {
+  .event-card{
+    width: 20rem !important;
+    margin: 0 auto;
+  }
+  
+   
+  }
+
+@media screen and  (min-width: 1200px) {
+  .event-card{
+    width: 16rem !important;
+  }
+
+   
+ }
