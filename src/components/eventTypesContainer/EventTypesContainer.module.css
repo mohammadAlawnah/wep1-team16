@@ -1,0 +1,6 @@
+.eventsContainer {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  margin: auto;
+}
