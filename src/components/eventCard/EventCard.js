@@ -5,7 +5,7 @@ import {faShareNodes} from '@fortawesome/free-solid-svg-icons'
 import './EvntCart.css'
 
 export default function EventCard(props) {
-    let [like,setLike] = useState(props.atend);
+    let [like,setLike] = useState(props.attending);
     let [btnStyle,setBtnStyle] = useState('btn-outline-success')
     let [activeBtn,setActiveBtn] = useState(false)
   
@@ -24,10 +24,10 @@ export default function EventCard(props) {
 
   return (
 
-    <div className='col-3'>
-    <div className="card" style={{width: '16rem'}}>
-   <img src="../../img/eventpageImg/event1.jpg" className="card-img-top" alt="..." />
-   <div className='bg-danger text-white mt-2 me-2 position-absolute top-0 end-0  custum'>Online</div>
+    <div className='col-12 col-sm-6'>
+    <div className="card" style={{width: '18rem'}}>
+   <img src={props.EventImg} className="card-img-top" alt="..." />
+   <div className='bg-danger text-white mt-2 me-2 position-absolute top-0 end-0  custum'>{props.eventDisplay}</div>
    <div className="card-body position-relative">
    <div className='bg-primary text-white  position-absolute top-0 start-1 custum2'>Spa training </div>
  
@@ -42,7 +42,7 @@ export default function EventCard(props) {
        <div className='loc'>
        <svg xmlns="http://www.w3.org/2000/svg" height="14" width="12.5" viewBox="0 0 384 512">
        <path fill="#676a79" d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-       <span className='small ms-1'>{props.loc}</span>
+       <span className='small ms-1'>{props.location}</span>
  
          </div>
  
