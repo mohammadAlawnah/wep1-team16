@@ -1,8 +1,5 @@
 .cardBox {
   display: flex;
-  gap: 0px;
-  margin: 0px;
-  padding: 0px;
   background-color: #fff;
   border-radius: 6px;
 }
