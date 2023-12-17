@@ -17,8 +17,8 @@ export default function MassegesSections() {
   return (
    <div className="MassegesSections">
     <div className="container mt-5"> 
-    <h1>More than masseges</h1>
-    <p>Express besides it present if at an opinion visitor.</p>
+    <h1 className='moreMasseges'>More than masseges</h1>
+    <p className='Express'>Express besides it present if at an opinion visitor.</p>
     <br></br>
     <div className="row  row-cols-md-3 g-1">
     <CardsOfSection img={imge1} title={title1} description={description1}/>
