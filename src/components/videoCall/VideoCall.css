@@ -1,27 +1,29 @@
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
 
-h1{
+.h11{
     font-family: 'Poppins', 'PT Sans', 'Varela Round', sans-serif;
-    padding: 20px
+    padding: 20px;
+    margin-right:300px;
+
 }
 
-b, pre {
+.b, .pre {
 font-family: 'Poppins', 'PT Sans', 'Varela Round', sans-serif;
 font-size: 100%;
-
 }
 
-.fa-thumbs-up {
-margin-right: 10px; 
-
+.b{
+    margin-right: 360px;
 }
 
-.fa-book {
-margin-right: 10px; 
-
+.s1{
+    fill:rgb(76, 73, 73);
 }
 
+.s2{
+    fill:rgb(94, 94, 236);
+}
 .img-container {
 width: 15rem;
 height: 15rem;
@@ -36,7 +38,6 @@ position: relative;
     height: 100%; 
 
 }
-
 
 .circular-image {
     position: relative;
@@ -58,22 +59,57 @@ height: auto;
     margin-top: 40px;
 }
 
-.videoCall svg {
+.videoCall .svgf {
 width: 30px;
 height: 30px;
 margin-left: 30px;
 }
 
-.text-container div {
+.text-container .div {
 display: flex;
 }
 
-.text-container div svg {
+.text-container .div .svgf {
 margin-right: 15px; 
 }
 
-.text-container span pre {
+.text-container .span .pre {
     white-space: pre-wrap;
     color: gray;
+    max-width: 500px;
 }
 
+@media (max-width: 768px) {
+    .h11 {
+        margin-right:350px; 
+        }
+
+    .b, .pre {
+    margin-right: 100px; 
+    }
+
+    .rounded-image {
+    right: 0; 
+    width: 57%; 
+    }
+
+    .videoCall {
+    flex-direction: column; 
+    margin-top: 20px; 
+    }
+
+    .videoCall .svgf {
+    margin-left: 0; 
+    margin-top: 25px; 
+    }
+
+    .text-container .div .svgf {
+    margin-right: 0; 
+    margin-bottom: 10px; 
+    }
+
+    .img-container{
+        margin-right: 170px;
+        margin-top: 45px;
+    }
+}
