@@ -6,16 +6,18 @@ import MassegesSections from "../../components/massegesSections/MassegesSections
 import CardsContainer from "../../components/cardsContainer/CardsContainer";
 import VideoCall from '../../components/videoCall/VideoCall'
 import DownloadApp from '../../components/downloadApp/DownloadApp'
+import GetDiscovered from "../../components/getDiscovered/GetDiscovered";
 export default function Landing() {
    return (
-          <>
-            <NavbsrLanding />
-            <AboutLanding />
-            <ScreenCompatibility />
-            <MassegesSections/>
-            <CardsContainer />
-            <VideoCall />
-            <DownloadApp/>
-         </>
-     )
+            <>
+               <NavbsrLanding />
+               <AboutLanding />
+               <ScreenCompatibility />
+               <MassegesSections/>
+               <CardsContainer />
+               <GetDiscovered/>
+               <VideoCall />
+               <DownloadApp/>
+            </>
+      )
 }
