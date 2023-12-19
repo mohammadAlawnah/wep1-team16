@@ -1,26 +1,24 @@
 import React, { useEffect, useState } from 'react'
-import { collection, getDocs } from "firebase/firestore";
-import { db } from '../../firbase'
 import EventCard from '../eventCard/EventCard'
 import './EventSection.css'
+import {getData} from '../../readData'
+import { Link } from 'react-router-dom';
 
 export default function EventSection() {
-    let index =0;
-    const [Events, setEvents] = useState([]);
+    const [Events,setEvents] = useState([]);
 
-    const getEvents = async () => {
-         
-      await getDocs(collection(db, "events"))
-          .then((querySnapshot)=>{               
-              const newData = querySnapshot.docs
-                  .map((doc) => ({...doc.data(), id:doc.id }));
-                setEvents(newData);                
-          })
-     }
+
+    useEffect(()=>{
+      getEvents();
+    },[])
+
+    
+    const getEvents = async ()=>{
+     const  response = await getData('events') 
+     setEvents(response);
+
+    }
   
-     useEffect(()=>{
-        getEvents();
-  }, [])
 
   const eventImg = [
     {id:1,src:'../../img/eventpageImg/event1.jpg'},
@@ -31,15 +29,12 @@ export default function EventSection() {
 
   
   
-
-
-
   return (
     <>
     <div className='event container  mt-5'>
         <div className='d-flex justify-content-between mb-3'>
            <h3>Discover Events</h3>
-           <a href='#' >View all events</a>
+           <Link>View all events</Link>
          </div>
         
     <div className='row '>

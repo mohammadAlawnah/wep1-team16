@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faThumbsUp} from '@fortawesome/free-solid-svg-icons'
 import {faShareNodes} from '@fortawesome/free-solid-svg-icons'
 import './EvntCart.css'
-
 export default function EventCard(props) {
     let [like,setLike] = useState(props.attending);
     let [btnStyle,setBtnStyle] = useState('btn-outline-success')
@@ -21,7 +20,7 @@ export default function EventCard(props) {
         }
       }
 
-
+    
   return (
 
     <div className='col-12 col-sm-6 col-xl-3'>
@@ -99,6 +98,6 @@ export default function EventCard(props) {
    </div>
      </div>
      </div>
-       )
+   )
 }
 
