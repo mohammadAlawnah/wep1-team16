@@ -6,10 +6,10 @@ export default function Header() {
 
 
  <div className='Header'>
-<div className='paragra'>
-        <h1>Find events near you</h1>
-        <p>Lets uncover the best pleace to eat,drink and shop nearset to you.</p>
-       </div>
+       <div className='paragra'>
+        <h1 className='paragraOfH'>Find events near you</h1>
+        <p className='paragraOfP' >Lets uncover the best pleace to eat,drink and shop nearset to you.</p>
+        </div>
        <br></br>
        
 <div className="card finds">

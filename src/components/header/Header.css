@@ -1,13 +1,19 @@
 .Header{
-    background-image: url(../../../public/img/homeBackGround/headerImage.jpeg);
+    background-image: url(../../../public/img/eventpageImg/ImageAboutHeader.png);
     height: 70vh;
-    filter: brightness(90%);
+    filter: brightness(80%);
 }
 
-.paragra{
+.paragraOfH{
     text-align: center;
- color:black;
+ color:white;
 }
+
+.paragraOfP{
+    text-align: center;
+ color: rgb(255, 255, 255);
+}
+
 .finds{
     width: 50%;
     margin-left: 300px;
