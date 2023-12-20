@@ -1,0 +1,23 @@
+.Header{
+    background-image: url(../../../public/img/homeBackGround/headerImage.jpeg);
+    height: 70vh;
+    filter: brightness(90%);
+}
+
+.paragra{
+    text-align: center;
+ color:black;
+}
+.finds{
+    width: 50%;
+    margin-left: 300px;
+   
+}
+
+.card-title{
+    text-align: left;
+}
+
+.changeEvant{
+    margin-top: 50px;
+}
