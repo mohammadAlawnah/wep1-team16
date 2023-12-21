@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { getData } from '../../readData';
 import { Link } from 'react-router-dom';
+import Input from '../../components/shared/Input';
+import { addData } from '../../AddData';
 
 export default function DisplayEvents() {
     const [Events,setEvents] = useState([]);
@@ -21,6 +23,36 @@ export default function DisplayEvents() {
         alert(id)
 
     }
+    const da = {
+      title : '',
+      location: '',
+      date : '',
+      eventDisplay : '',
+      attending : null,
+    }
+
+    const newData = (event)=>{
+      const{name,value} = event.target
+      da[name] = value;
+      
+    }
+    const dis = (event)=>{
+      event.preventDefault();
+      addData('events',da)
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
   return (
     <>
  <div>
@@ -31,60 +63,24 @@ export default function DisplayEvents() {
           <h1 className="modal-title fs-5">Add Event</h1>
           <button type="button" className="btn-close" data-bs-dismiss="modal" />
         </div>
-        <div className="modal-body">
-          <div className="container-fluid mt-3">
-            <div className="row">
-              <div className="col-12 col-lg-6 mb-3">
-                <div className="d-flex align-items-center">
-                  <i className="bi-person-circle fs-3 pe-3" />
-                  <div className="form-floating flex-grow-1">
-                    <input type="text" className="form-control" id="nome-contato" placeholder="Nome" />
-                    <label htmlFor="nome-contato">Title</label>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-lg-6 mb-3">
-                <div className="d-flex align-items-center">
-                  <i className="bi-envelope-at fs-3 pe-3" />
-                  <div className="form-floating flex-grow-1">
-                    <input type="email" className="form-control" id="email-contato" placeholder="E-mail" />
-                    <label htmlFor="email-contato">location</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12 col-lg-6 mb-3">
-                <div className="d-flex align-items-center">
-                  <i className="bi-telephone fs-3 pe-3" />
-                  <div className="form-floating flex-grow-1">
-                    <input type="tel" className="form-control" id="tel-contato" placeholder="Telefone" />
-                    <label htmlFor="tel-contato">Attending</label>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-lg-6 mb-3">
-                <div className="d-flex align-items-center">
-                  <i className="bi-bookmark fs-3 pe-3" />
-                  <div className="form-floating flex-grow-1">
-                    <select className="form-select" id="tipo-contato">
-                      <option selected>Selecionar</option>
-                      <option value={1}>Trabalho</option>
-                      <option value={2}>Família</option>
-                      <option value={3}>Amigo</option>
-                      <option value={3}>Sem Tipo</option>
-                    </select>
-                    <label htmlFor="tipo-contato">Tipo</label>
-                  </div>
-                </div>     
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="modal-footer">
-          <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" className="btn btn-primary">Salvar Contato</button>
-        </div>
+        <div className='mt-3 mb-3'>EditEvent</div>
+
+      <form onSubmit={dis}>
+
+      <Input name={"title"} type={"text"} id={"title"} title={"title"} value={''} changeData={newData}  />
+      <Input name={"location"} type={"text"} id={"location"} title={"location"} value={''} changeData={newData}/>
+      <Input name={"date"} type={"text"} id={"date"} title={"date"} value={''} changeData={newData} />
+      <Input name={"eventDisplay"} type={"text"} id={"eventDisplay"} title={"eventDisplay"} value={''} changeData={newData} />
+      <Input name={"attending"} type={"number"} id={"attending"} title={"attending"} value={null} changeData={newData} />
+      <div className='mb-3'>
+        <input type='submit' className='form-control text-white bg-success w-50 ms-auto me-auto ' value={'Add Event'} />
+      </div>
+
+      </form>   
+        
+        
+
+ 
       </div>
     </div>
   </div>
