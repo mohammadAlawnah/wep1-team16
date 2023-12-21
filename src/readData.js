@@ -11,3 +11,5 @@ export const getData = async (col) =>{
         })
         return(newData)
   }
+
+  
