@@ -1,21 +1,21 @@
 import React from 'react';
 
-const GroupCard = ({ title, backgroundImage, logo, type, members, postsPerDay, avatars}) => {
+const GroupCard = (props) => {
 return (
 <div className="col-md-4 mb-4">
     <div className="Group-card">
     <div className="img1">
-        <img className='img-card' src={backgroundImage} alt={`${title} Background`} />
+        <img className='img-card' src={props.backgroundImage} alt={`${props.title} Background`} />
     </div>
 
     <div className="img2">
-        <img className='img-card' src={logo} alt={`${title} Logo`} />
+        <img className='img-card' src={props.logo} alt={`${props.title} Logo`} />
     </div>
 
     <div className="main-card">
-        <b className='b-card'>{title}</b>
+        <b className='b-card'>{props.title}</b>
         <p className='p-card'>
-        {type === 'private' ? (
+        {props.type === 'private' ? (
             <svg className='svg-card' xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512">
             <path
                 d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"
@@ -28,29 +28,28 @@ return (
             />
             </svg>
         )}{' '}
-        {type === 'private' ? 'Private Group' : 'Public Group'}
+        {props.type === 'private' ? 'Private Group' : 'Public Group'}
         </p>
         
         <div className="container-Group-card">
         <div className="left-section">
-            <b className='b-card'>{members}</b>
+            <b className='b-card'>{props.members}</b>
             <p className='p-card'>Members</p>
         </div>
         
         <div className="vertical-line"></div>
 
         <div className="right-section">
-            <b className='b-card'>{postsPerDay}</b>
+            <b className='b-card'>{props.postsPerDay}</b>
             <p className='p-card'>Post per day</p>
         </div>
         </div>
 
-        <div className="small-img align-items-center justify-content-center mb-0 mt-3">
-            {avatars.map((avatar, index) => (
-                <img key={index} className="circular-image" src={avatar} />
-            ))}
-        </div>
-
+            <div className="small-img align-items-center justify-content-center mb-0 mt-3">
+            {props.Images.map((image, imgIndex) => (
+                    <img key={imgIndex} className="circular-image" src={image} alt={`${imgIndex + 1}`} />
+                ))}
+            </div> 
     </div>
     </div>
 </div>
