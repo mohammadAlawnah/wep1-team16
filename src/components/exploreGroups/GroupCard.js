@@ -47,7 +47,7 @@ return (
 
             <div className="small-img align-items-center justify-content-center mb-0 mt-3">
             {props.Images.map((image, imgIndex) => (
-                    <img key={imgIndex} className="circular-image" src={image} alt={`${imgIndex + 1}`} />
+                    <img key={imgIndex} className="circular-image-ExploreGroups" src={image} alt={`${imgIndex + 1}`} />
                 ))}
             </div> 
     </div>
