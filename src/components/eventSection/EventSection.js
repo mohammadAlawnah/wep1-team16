@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react'
 import EventCard from '../eventCard/EventCard'
 import './EventSection.css'
 import {getData} from '../../readData'
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export default function EventSection() {
     const [Events,setEvents] = useState([]);
 
+    const {nam} = useParams('nam')
+   
 
     useEffect(()=>{
       getEvents();
@@ -27,10 +29,12 @@ export default function EventSection() {
     {id:1,src:'../../img/eventpageImg/event5.png'},
   ]
 
-  
-  
+  let foundEvent = nam != null ? Events.find((Event) => Event.title == nam) : null;
+
+  let index ;
   return (
     <>
+    {console.log(nam)}
     <div className='event container  mt-5'>
         <div className='d-flex justify-content-between mb-3'>
            <h3>Discover Events</h3>
@@ -38,10 +42,14 @@ export default function EventSection() {
          </div>
         
     <div className='row '>
-    {Events.map((Event,index)=>{
-        // return <EventCard title={Event.title } date={Event.date} loc={Event.location} atend={Event.attending} eventDisplay={Event.eventDisplay} EventImg={'../../img/eventpageImg/event5.png'} />
-        return <EventCard {...Event} key={Event.id} EventImg={eventImg[index].src}/>
-    })}
+    {
+ foundEvent ? <EventCard {...foundEvent} key={foundEvent.id} EventImg={eventImg[0].src}/> :
+ nam == null ? Events.map((Event, index) => <EventCard {...Event} key={Event.id} EventImg={eventImg[index].src}/>) :
+ "not found"
+}
+
+
+   
     </div>
 
     </div>
@@ -50,3 +58,8 @@ export default function EventSection() {
     </>
   )
 }
+
+
+// {Events.map((Event,index)=>{
+//   return <EventCard {...Event} key={Event.id} EventImg={eventImg[index].src}/>
+// })}
