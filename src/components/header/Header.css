@@ -1,0 +1,29 @@
+.Header{
+    background-image: url(../../../public/img/eventpageImg/ImageAboutHeader.png);
+    height: 70vh;
+    filter: brightness(80%);
+}
+
+.paragraOfH{
+    text-align: center;
+ color:white;
+}
+
+.paragraOfP{
+    text-align: center;
+ color: rgb(255, 255, 255);
+}
+
+.finds{
+    width: 50%;
+    margin-left: 300px;
+   
+}
+
+.card-title{
+    text-align: left;
+}
+
+.changeEvant{
+    margin-top: 50px;
+}
