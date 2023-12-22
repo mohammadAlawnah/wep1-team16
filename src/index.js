@@ -37,6 +37,10 @@ const router = createBrowserRouter([
     path: "event/:id",
     element :<EditEvent />
 
+  },
+  {
+    path : "/events/:nam",
+    element: <Events />,
   }
 ]);
 root.render(

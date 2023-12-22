@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+.h3-footer , .p-footer , .pp-footer{
+    font-family: 'Poppins', 'PT Sans', 'Varela Round', sans-serif;
+}
+
+.h3-footer{
+    text-align: left; 
+}
+
+.Footer {
+    margin-top: 70px;
+    padding:50px 0;
+    background-color: white;
+}
+
+.p-footer , .pp-footer {
+    color: gray;
+    margin-right: 30px;
+    text-align: left;
+    font-size: 15px;
+}
+
+
+.svg-footer {
+    fill: gray; 
+    margin-right: 8px;
+    max-width: 16px;
+}
+
+.li-footer{
+    color: gray;
+    margin-bottom: 10px;
+    font-size:20px;
+    text-align: left; 
+}
+
+
+.img-footer {
+    max-width: 40px;
+    height: 40px;
+    margin-right: 280px;
+}
+
+.text-center.text-lg-end.mb-0 {
+color: gray;
+font-size:16px;
+margin-right: 63px;
+}
+
+.py-3.footer-below .container .row .col-lg-6 .ul-f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.py-3.footer-below .container .row .col-lg-6 .ul-f .li-f .p-footer {
+    font-size: 16px;
+}
+
