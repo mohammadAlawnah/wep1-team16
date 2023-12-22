@@ -3,7 +3,7 @@ import Type from "../eventTypes/Type";
 import classes from "./EventTypesContainer.module.css";
 const EventTypesContainer = () => {
   return (
-    <div className={`px-1 py-4 ${classes.eventsContainer}`}>
+    <div className={`mt-2 px-1 py-4 ${classes.eventsContainer}`}>
       <div className="container">
         <div className="row justify-content-lg-center">
           <div className="col-sm-6 col-md-3 col-lg-2 mb-2  d-flex justify-content-center">
