@@ -62,10 +62,18 @@ export default function EventCard(props) {
        <img src='../../img/eventpageImg/person2.jpg' alt="D.abd"/>
 
        </div>
- 
+{/*  
        <div className='smallImg marginLeft'>
-         <p clasesName='numAttend d-flex align-items-center justify-content-center bg-primary text-white '><span>+</span>{like}</p>
+         <p clasesName='numAttend d-flex align-items-center justify-content-center bg-primary text-white'><span>+</span>{like}</p>
+       </div> */}
+       <div className='smallImg marginLeft'>
+        {console.log(like)}
+          <p className=' numAttend bg-primary text-white d-flex align-items-center justify-content-center'><span>+</span>{like}</p>
+
        </div>
+
+
+
        <div>
          <span className='ms-1 text-secondary attending mt-5'>are attending</span>
        </div>
