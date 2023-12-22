@@ -41,7 +41,7 @@ export default function Conference() {
   
   <div>
   <br></br>
-    <h5 className="col-md-5">{conference[0]?.title}</h5>
+    <h5 style={{textAlign:'left'}}className="col-md-5">{conference[0]?.title}</h5>
     <p style={{textAlign:'left'}} className="align-items-left">{conference[0]?.descrbtion}</p> 
   </div>
 
@@ -60,7 +60,7 @@ export default function Conference() {
   </div>
 </div>
 </div>
-{/*align-self-end */}
+
  <div className="col-lg-6 offset-lg-1">
   <h4 className="mb-4 titleOfBook">Book a conference</h4>
   <div className="bg-light dashed p-4 rounded">
@@ -68,17 +68,17 @@ export default function Conference() {
       <div className="col-sm-6">
         <div className="row g-4">
         
-          <div className="col-6">
+          <div className="col-6 smallOne">
             <small>Date</small>
             <h6>{ticket[0]?.Date}</h6>
           </div>
         
-          <div className="col-6">
+          <div className="col-6 smallOne">
             <small>Time</small>
             <h6>{ticket[0]?.Time}</h6>
           </div>
          
-          <div className="col-12">
+          <div className="col-12 smallOne">
             <small>Address</small>
             <h6>{ticket[0]?.Address}</h6>
           </div>

@@ -1,16 +1,3 @@
-.col-md-5{
-    text-align: left;
-}
-
-.col-6{
-    text-align: left;
-}
-
-.col-12{
-    text-align: left;
-}
-
-
 .butttons{
 margin-bottom: 100px;
 }
@@ -19,3 +6,6 @@ margin-bottom: 100px;
     text-align: left;
 }
 
+.smallOne{
+    text-align: left;
+}
