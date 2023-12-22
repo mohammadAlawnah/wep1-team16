@@ -7,7 +7,6 @@ import CardsContainer from "../../components/cardsContainer/CardsContainer";
 import VideoCall from '../../components/videoCall/VideoCall'
 import DownloadApp from '../../components/downloadApp/DownloadApp'
 import GetDiscovered from "../../components/getDiscovered/GetDiscovered";
-import Footer from "../../components/footer/Footer";
 export default function Landing() {
    return (
             <>
@@ -19,7 +18,6 @@ export default function Landing() {
                <GetDiscovered/>
                <VideoCall />
                <DownloadApp/>
-               <Footer/>
             </>
       )
 }
