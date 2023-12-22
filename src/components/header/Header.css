@@ -1,11 +1,20 @@
 .Header{
+    background-repeat: repeat;
+    margin: 0 auto;
     background-image: url(../../../public/img/eventpageImg/ImageAboutHeader.png);
-    height: 70vh;
-    filter: brightness(80%);
+    background-color: rgba(0, 0, 0, 0.65); 
+    background-blend-mode: darken;
+
 }
 
-.paragraOfH{
-    text-align: center;
+
+.paragra{
+    width: 50%;
+    margin: auto;
+}
+
+ .paragraOfH{
+text-align: center;
  color:white;
 }
 
@@ -15,15 +24,17 @@
 }
 
 .finds{
-    width: 50%;
-    margin-left: 300px;
+    width: 80%;
+    /* margin-left: 300px; */
+    margin: auto;
+    padding: 1rem;
    
 }
 
-.card-title{
+/* .card-title{
     text-align: left;
 }
-
+*/
 .changeEvant{
-    margin-top: 50px;
-}
+    margin-top: 9%;
+}  

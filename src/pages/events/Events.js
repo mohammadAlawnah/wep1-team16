@@ -4,11 +4,11 @@ import Conference from "../../components/conference/Conference";
 import Header from "../../components/header/Header";
 import ExploreGroups from "../../components/exploreGroups/ExploreGroups";
 import DestinationsContainer from "../../components/topDestinationsContainer/DestinationsContainer";
-export default function Events() {
+export default function Events(props) {
   return (
     <>
     <Header/>
-    <EventSection />
+    <EventSection searsh={props.searsh} />
     <Conference/>
     <DestinationsContainer />
     <ExploreGroups/>
