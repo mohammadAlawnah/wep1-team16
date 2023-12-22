@@ -11,6 +11,8 @@ import {
 } from "react-router-dom";
 import Landing from './pages/landing/Landing';
 import Events from './pages/events/Events';
+import DisplayEvents from './pages/displayEvents/DisplayEvents';
+import EditEvent from './pages/editEvent/EditEvent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -26,6 +28,16 @@ const router = createBrowserRouter([
     path: "/events",
     element: <Events />,
   },
+  {
+    path: "/events/display",
+    element : <DisplayEvents />
+    
+  },
+  {
+    path: "event/:id",
+    element :<EditEvent />
+
+  }
 ]);
 root.render(
   <React.StrictMode>
