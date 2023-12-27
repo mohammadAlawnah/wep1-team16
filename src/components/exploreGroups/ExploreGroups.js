@@ -20,7 +20,7 @@ function ExploreGroups() {
     }
     
 return (
-    <div>
+    <>
         <div className="container mt-5">
             <h2 className="h2-card">Explore Groups</h2>
             <div className="row mt-5">
@@ -37,7 +37,7 @@ return (
 
             </div>
         </div>
-    </div>
+    </>
 );
 }
 
