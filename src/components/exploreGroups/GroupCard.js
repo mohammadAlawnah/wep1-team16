@@ -33,7 +33,7 @@ return (
         
         <div className="container-Group-card">
         <div className="left-section">
-            <b className='b-card'>{props.members}</b>
+            <b className='b-card'>{props.members}k</b>
             <p className='p-card'>Members</p>
         </div>
         
