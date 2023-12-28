@@ -3,6 +3,7 @@ import './Footer.css';
 import { useEffect } from 'react';
 import { getData } from '../../readData';
 import FooterBelow from './FooterBelow'
+import LinkComponents from './LinkComponents';
 
 function Footer() {
     const [Download,setDownload] = useState([]);
@@ -36,8 +37,6 @@ function Footer() {
     
 return (                        
 <>    
-{console.log(Download)}
-{console.log(About)}
 
 <footer className="Footer pt-5">
     <div className="container f">
@@ -48,8 +47,12 @@ return (
                         seeing death their fat off.
                 </p>
             </div>
+            <LinkComponents Data={Download} title = {'Download'} />
+            <LinkComponents Data={About} title = {'About'} />
+            <LinkComponents Data={Resources} title = {'Resources'} />
 
-            <div className="col-sm-6 col-lg-3">
+
+            {/* <div className="col-sm-6 col-lg-3">
                 <h3 className='h3-footer mb-4'>Download</h3>
                 <ul className='flex-column list-unstyled'>
                     {Download.map((link)=>{
@@ -59,9 +62,9 @@ return (
                     {link.link}</li>
                     })}
                 </ul>
-            </div>
+            </div> */}
 
-            <div className="col-sm-6 col-lg-3">
+            {/* <div className="col-sm-6 col-lg-3">
                 <h3 className='h3-footer mb-4'>About</h3>
                 <ul className='flex-column list-unstyled'>
                     {About.map((link)=>{
@@ -69,9 +72,9 @@ return (
                     })}
 
                 </ul>
-            </div>
+            </div> */}
 
-            <div className="col-sm-6 col-lg-3">
+            {/* <div className="col-sm-6 col-lg-3">
                 <h3 className='h3-footer mb-4'>Resources</h3>
                 <ul className=' flex-column list-unstyled'>
                     {
@@ -81,7 +84,7 @@ return (
                     }
 
                 </ul>
-            </div>
+            </div> */}
         </div>
     </div>
 
